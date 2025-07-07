@@ -1,0 +1,86 @@
+{ box-sizing: border-box;}
+.mainvisual {background-image: url('../img/p1/t_top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; height: 700px; position: relative;}
+.accbox { display: none;}
+.content-wrapper { width: 100%;}
+
+header { color: #707070;}
+.list-wrapper { width: 100%; margin: 0 auto; display: flex; justify-content: space-between;}
+.sp_title { display: none;}
+.menu { margin: auto 0;}
+.main-lists { list-style: none; display: flex; width:100% ;padding: 0;margin: 0;}
+.main-list { background-color: white; text-align: center; padding: 10px 0; margin: 0 10px; width: 20% ; font-size: 17px ;font-family: ヒラギノ角ゴ ProN; border-left: solid #707070 thin; border-right: solid #707070 thin;}
+.main-list:hover {background-color: #3E1506;}
+header p { font-size: 20px; font-family: ヒラギノ角ゴ ProN; color: #000000;line-height: 23px;}
+header a { color: #707070; text-decoration: none; height: 100%;}
+header a:hover, .foot-list a:hover, .foot-1 a:hover { text-decoration: none; color: #3E1506;}
+
+.maincopy_en { font-size: 70px; font-family: HanziPen TC; color: #3E1506; text-align: left;}
+.en_1 { text-align: left; position: absolute; top: 43%;left: 25%;}
+.en_2 { text-align: right; position: absolute; top: 53%;right: 25%;}
+.pc_en { display: block;}
+.pc_ja { display: none;}
+small { line-height: center; font-family: ヒラギノ角ゴ ProN; color: #707070}
+.content { width: 100%; background-color: #CECECE;}
+
+.index-right { width: 100%; height: 200px; position: relative; margin: 0 0 0 auto;}
+.index-left { width: 100%; height: 200px; position: relative; margin: 0;}
+.left-circle { width: auto; height: 85%; border-radius: 50%; position: absolute; left: 15%; transform: translateX(-50%); top: 7%; z-index: 1;}
+.right-circle { width: auto; height: 85%; border-radius: 50%; position: absolute; right: 15%; transform: translateX(50%); top: 7%; z-index: 1;}
+
+.right-trapezoid2 { border-bottom: 200px solid #FCCC66; border-left: 200px solid transparent; border-right: 0 solid transparent; height: 0; width: calc(100% - 200px);  margin: 0;}
+.left-trapezoid3 { border-bottom: 200px solid #BFD99E; border-left: 0px solid transparent; border-right: 200px solid transparent; height: 0; width: calc(100% - 200px);  margin: 0;}
+.right-trapezoid4 { border-bottom: 200px solid #882D1A; border-left: 200px solid transparent; border-right: 0px solid transparent; height: 0; width: calc(100% - 200px);  margin: 0;opacity: 0.6;}
+.left-trapezoid5 { border-bottom: 200px solid #022689; border-left: 0px solid transparent; border-right: 200px solid transparent; height: 0; width: calc(100% - 200px);  margin: 0;opacity: 0.4;}
+.right-trapezoid6 { border-bottom: 200px solid #D20037; border-left: 200px solid transparent; border-right: 0px solid transparent; height: 0; width: calc(100% - 200px);  margin: 0; opacity: 0.6;}
+
+.index-right .comment { width: 50%;  height: auto; position: absolute; top: 10%; right: 15%;}
+.index-left .comment { width: 50%; height: auto; position: absolute; top: 10%; left:15%;}
+h1 { font-size: 30px; font-family: HanziPen TC; color: #FFFFFF; line-height: 8px;}
+p { font-size: 15px; font-family: ヒラギノ角ゴ ProN; color: #FFFFFF; line-height: 19px;}
+
+.content { background-size: cover; width: 100%;  margin: 0 auto; padding-top: 0;}
+.copy { text-align: center;}
+
+@media screen and (max-width: 740px){
+  { box-sizing: border-box;}
+  body { -webkit-text-size-adjust-: 100%;}/* iphoneでは端末の盾・横向きに応じて文字サイズを変える機能がある（androidには無い）。向きを変えてもサイズが勝手に変わらないように制御するコード。文字サイズの調節を無効にする。*/
+.mainvisual {background-image: url('../img/p1/t_top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; height: 360px; position: relative;}
+.sp_title { display: block; margin: auto 0; padding: 0;}
+.pc_title { display: none;}
+.menu { display: none;}
+.list-wrapper { width: 100%; height: 43px; position: relative;}
+.accbox { display: block; position: absolute; z-index: 1; margin: 0; padding: 0; text-align: center; right: 0;}
+.accbox label { display: block; padding : 11px 12px; color :#ffffff; font-weight: bold; background :#035069; cursor :pointer; transition: all 0.5s;}
+.accbox label:hover { background :#C4AA73;}
+.accbox input { display: none;}
+.accbox .accshow { height: 0; padding: 0; overflow: hidden; opacity: 0; transition: 0.8s;}
+.cssacc:checked + .accshow { height: auto; padding: 10px; background: #eaeaea; opacity: 1; text-align: center;}
+.accbox ul { padding: 10px;}
+.cssacc:checked + .accshow li { list-style: none; text-align: left;}
+.cssacc:checked + .accshow a { font-size: 18px; font-family: HanziPen TC; color: #035069;}
+.cssacc:checked + .accshow a:hover { text-decoration: none; color: #C4AA73;}
+
+.maincopy_en { font-size: 35px; font-family: HanziPen TC; color: #3E1506; text-align: left;}
+.en_1 { text-align: left; position: absolute; top: 38%;left: 20%;}
+.en_2 { text-align: right; position: absolute; top: 50%;right: 20%;}
+.content { width: 100%; background-color: #CECECE;}
+h1 { font-size: 15px; font-family: HanziPen TC; color: #FFFFFF; line-height: 8px;}
+p { font-size: 12px; font-family: ヒラギノ角ゴ ProN; color: #FFFFFF; line-height: 14px;}
+small { line-height: center; font-family: ヒラギノ角ゴ ProN; color: #707070; font-size: 7px;}
+
+.index-right { width: 100%; min-height:150px; height: auto ; position: relative; margin: 0 0 0 auto;}
+.index-left { width: 100%; min-height:150px; height: auto; position: relative; margin: 0;}
+.left-circle { width: auto; height: 85%; border-radius: 50%; position: absolute;  left: 15%; transform: translateX(-30%); top: 7%; z-index: 1;}
+.right-circle { width: auto; height: 85%; border-radius: 50%; position: absolute; right: 15%; transform: translateX(30%); top: 7%; z-index: 1;}
+
+.right-trapezoid2 { border-bottom: 150px solid #FCCC66; border-left: 150px solid transparent; border-right: 0 solid transparent; height: 0; width: calc(100% - 150px);  margin: 0;}
+.left-trapezoid3 { border-bottom: 150px solid #BFD99E; border-left: 0px solid transparent; border-right: 150px solid transparent; height: 0; width: calc(100% - 150px);  margin: 0;}
+.right-trapezoid4 { border-bottom: 150px solid #882D1A; border-left: 150px solid transparent; border-right: 0px solid transparent; height: 0; width: calc(100% - 150px);  margin: 0;opacity: 0.6;}
+.left-trapezoid5 { border-bottom: 150px solid #022689; border-left: 0px solid transparent; border-right: 150px solid transparent; height: 0; width: calc(100% - 150px);  margin: 0;opacity: 0.4;}
+.right-trapezoid6 { border-bottom: 150px solid #D20037; border-left: 150px solid transparent; border-right: 0px solid transparent; height: 0; width: calc(100% - 150px);  margin: 0; opacity: 0.6;}
+
+.index-right .comment { width: 50%; height: auto; min-width: 120px; position: absolute; top: 7%; right: 5%;}
+.index-left .comment { width: 50%; height: auto; min-width: 120px; position: absolute; top: 7%; left: 5%;}
+.content { width: 100%; margin: 0 auto; padding-top: 0;}
+.copy { text-align: center;}
+}

@@ -1,0 +1,60 @@
+{ box-sizing: border-box;}
+.accbox { display: none;}
+.list-wrapper { width: 70%; margin: 0 auto; display: flex; justify-content: space-between;}
+.sp_title { display: none;}
+.menu { margin: auto 0;}
+.main-lists { list-style: none; display: flex; width:100% ;padding: 0;margin: 0;}
+.main-list { background-color: white; text-align: center; padding: 10px 0; margin: 0 10px; width: 20% ; font-size: 17px ;font-family: ヒラギノ角ゴ ProN; border-left: solid #707070 thin; border-right: solid #707070 thin;}
+.main-list:hover {background-color: #3E1506;}
+header a { color: #707070; text-decoration: none; height: 100%;}
+header a:hover, .foot-list a:hover, .foot-1 a:hover { text-decoration: none; color: #3E1506;}
+
+.top-box p { margin: 0 auto;}
+
+h1 { font-size: 40px; font-family: HanziPen TC; color: #000000; margin: 20px auto 0px auto;}
+p { font-size: 20px; font-family: ヒラギノ角ゴ ProN; color: #000000;}
+p small { font-size: 13px;}
+
+.mainvisual { position: relative; background-image: url('../img/p5/5_top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; height: 600px; display: flex; justify-content: center; align-items: center; z-index: -2;}
+.maincopy_en { position: absolute; top: 12%;font-size: 40px; font-family: HanziPen TC; color: #3E1506; text-align: left;}
+.top-box { padding: 0 20px; background-color: white; width: 59%; height: 55%; text-align: center; opacity: 0.8; margin: 0 auto; max-width: 515px;}
+.trapezoid { margin: 0; position: absolute; left: 0; border-bottom: 600px solid #96AED0; border-left: 580px solid transparent; border-right: 0px solid transparent; height: 0; width: calc(100% - 580px); border-width: 0 0 0 90%;}
+.trapezoid0 { position: absolute; right: 0; width: 50%; height: 100%; z-index: -1; overflow: hidden;}
+.copy_en { width: 405px; height: 320px; color: white; text-align: left}
+.en_1 { font-size: 55px; font-family: HanziPen TC; color: #3E1506; text-align: left; position: absolute; top: 73%; right: 36%;}
+.en_2 { font-size: 55px; font-family: HanziPen TC; color: #3E1506; text-align: right; position: absolute; top: 83%; right: 48%;}
+.pot { display: flex; align-content: space-between;}
+.pot_i { width: 50%; height: auto;}
+
+.content-wrapper { display: flex; justify-content: center;}
+.content { width: 70%; margin: 50px auto;}
+.copy { text-align: center; border-top: solid thin #707070; margin-top: 50px;}
+
+
+@media screen and (max-width: 740px){
+body { -webkit-text-size-adjust-: 100%;}/* iphoneでは端末の盾・横向きに応じて文字サイズを変える機能がある（androidには無い）。向きを変えてもサイズが勝手に変わらないように制御するコード。文字サイズの調節を無効にする。*/
+.mainvisual { position: relative; background-image: url('../img/p5/5_top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; height: 360px; display: flex; justify-content: center; align-items: center;}
+.maincopy_en { position: absolute; top: 15%;font-size: 30px; font-family: HanziPen TC; color: #3E1506; text-align: left;}
+.sp_title { display: block; margin: auto 0; padding: 0;}
+.pc_title { display: none;}
+.menu { display: none;}
+.list-wrapper { width: 100%; height: 43px; position: relative;}
+.accbox { display: block; position: absolute; z-index: 1; margin: 0; padding: 0; text-align: center; right: 0;}
+.accbox label { display: block; margin: 0; padding : 11px 0; color :#ffffff; font-weight: bold; background : #035069; cursor :pointer; transition: all 0.5s;}
+.accbox label:hover { background: #C4AA73;}
+.accbox input { display: none;}
+.accbox h1 { font-size: 20px;line-height: 1px; color: white;}
+.accbox .accshow { height: 0; padding: 0; overflow: hidden; opacity: 0; transition: 0.8s;}
+.cssacc:checked + .accshow { height: auto; padding: 10px; background: #eaeaea; opacity: 1; text-align: center;}
+.accbox ul { padding: 10px;}
+.cssacc:checked + .accshow li { list-style: none; text-align: left;}
+.cssacc:checked + .accshow a { font-size: 18px; font-family: HanziPen TC; color: #035069;}
+.cssacc:checked + .accshow a:hover { text-decoration: none; color: #C4AA73;}
+
+h1 { font-size: 20px; font-family: HanziPen TC; color: #000000;}
+p { font-size: 12px; font-family: ヒラギノ角ゴ ProN; color: #000000;}
+.top-box { padding: 0 10px; background-color: white; width: 60%; height: auto; text-align: center; opacity: 0.8; margin: 0 auto;}
+.trapezoid { margin: 0; position: absolute; left: 0;  bottom: 0; border-bottom: 600px solid #96AED0; border-left: 400px solid transparent; border-right: 0px solid transparent; height: 0; width: calc(100% - 400px); border-width: 0 0 0 90%;}
+.trapezoid0 { position: absolute; right: 0; width: 50%; height: 100%; z-index: -1; overflow: hidden;}
+small { font-size: 7px;}
+}
