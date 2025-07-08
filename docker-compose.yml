@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8088:80"
+    volumes:
+      - ./html:/var/www/html
+      - ./apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    container_name: isogoku_web
